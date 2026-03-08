@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Icon</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/50/ce/35/50ce35d746e0fdfc152dc82a96683351.jpg"
+      type="icon/jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Roboto", sans-serif;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    span {
+      font-size: 18px;
+    }
+    body {
+      background: #ccc;
+    }
+    ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      list-style: none;
+      margin: 0 5px;
+    }
+    ul li a .fa-brands {
+      line-height: 80px;
+      transition: 0.5s;
+      padding-right: 14px;
+      font-size: 40px;
+      color: black;
+    }
+    ul li a span {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 30px;
+      letter-spacing: 3px;
+      transition: 0.5s;
+    }
+    ul li a {
+      text-decoration: none;
+      display: absolute;
+      display: block;
+      width: 210px;
+      height: 80px;
+      background-color: white;
+      padding-left: 20px;
+      text-align: left;
+      transform: rotate(-30deg) skew(25deg) translate(0, 0);
+      transition: 0.5s;
+      box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.4);
+    }
+    ul li a::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      height: 100%;
+      width: 20px;
+      background-color: #b1b1b1;
+      transform: 0.5s;
+      transform: rotate(0deg) skewY(-45deg);
+    }
+    ul li a::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -10px;
+      height: 20px;
+      width: 100%;
+      background-color: #b1b1b1;
+      transform: 0.5s;
+      transform: rotate(0deg) skewX(-45deg);
+    }
+    ul li a:hover {
+      transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+    }
+    ul li:hover span {
+      background: linear-gradient(
+        to top right,
+        #f2f3f4,
+        #fefefa,
+        #f8f4ff,
+        #c0c0c0,
+        #8c92ac
+      );
+      background-size: 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: anime 2.5s linear infinite;
+    }
+    @keyframes anime {
+      to {
+        background-position: 200%;
+      }
+    }
+
+    ul li:hover:nth-child(2) a {
+      background: linear-gradient(
+        to top right,
+        #ff6fff,
+        #ff00ff,
+        #8f00ff,
+        #fe4eda,
+        #ff6fff
+      );
+      background-size: 200%;
+      animation: spin 2s linear infinite;
+    }
+
+    ul li:hover:nth-child(2) a::before {
+      background: linear-gradient(
+        to bottom right,
+        #ff6fff,
+        #ff00ff,
+        #8f00ff,
+        #fe4eda,
+        #ff6fff
+      );
+      background-size: 200%;
+      animation: spin 2s linear infinite;
+    }
+    ul li:hover:nth-child(2) a::after {
+      background: linear-gradient(
+        to top right,
+        #ff6fff,
+        #ff00ff,
+        #8f00ff,
+        #fe4eda,
+        #ff6fff
+      );
+      background-size: 200%;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      to {
+        background-position: 200%;
+      }
+    }
+    ul li:hover:nth-child(1) a {
+      background: linear-gradient(
+        to bottom left,
+        #f0f8ff,
+        #b2ffff,
+        #7fffd4,
+        #0fffff,
+        #007fff,
+        #0000cd
+      );
+      background-size: 200%;
+      animation: zoro 2s linear infinite;
+    }
+
+    ul li:hover:nth-child(1) a::before {
+      background: linear-gradient(
+        to bottom left,
+        #f0f8ff,
+        #b2ffff,
+        #7fffd4,
+        #0fffff,
+        #007fff,
+        #0000cd
+      );
+      background-size: 200%;
+      animation: zoro 2s linear infinite;
+    }
+    ul li:hover:nth-child(1) a::after {
+      background: linear-gradient(
+        to bottom left,
+        #f0f8ff,
+        #b2ffff,
+        #7fffd4,
+        #0fffff,
+        #007fff,
+        #0000cd
+      );
+      background-size: 200%;
+      animation: zoro 2s linear infinite;
+    }
+    @keyframes zoro {
+      to {
+        background-position: 200%;
+      }
+    }
+    ul li:hover:nth-child(3) a {
+      background: linear-gradient(
+        to bottom left,
+        red,
+        orange,
+        yellow,
+        #7fffd4,
+        #0fffff
+      );
+      background-size: 200%;
+      animation: pain 2s linear infinite;
+    }
+
+    ul li:hover:nth-child(3) a::before {
+      background: linear-gradient(
+        to bottom left,
+        red,
+        orange,
+        yellow,
+        #7fffd4,
+        #0fffff
+      );
+      background-size: 200%;
+      animation: pain 2s linear infinite;
+    }
+    ul li:hover:nth-child(3) a::after {
+      background: linear-gradient(
+        to bottom left,
+        red,
+        orange,
+        yellow,
+        #7fffd4,
+        #0fffff
+      );
+      background-size: 200%;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes pain {
+      to {
+        background-position: 200%;
+      }
+    }
+    ul li:hover:nth-child(4) a {
+      background: linear-gradient(
+        to bottom left,
+        #00bfff,
+        #ff00ff,
+        #32cd32,
+        yellow
+      );
+      background-size: 200%;
+      animation: go 2s linear infinite;
+    }
+
+    ul li:hover:nth-child(4) a::before {
+      background: linear-gradient(
+        to bottom left,
+        #00bfff,
+        #ff00ff,
+        #32cd32,
+        yellow
+      );
+      background-size: 200%;
+      animation: go 2s linear infinite;
+    }
+    ul li:hover:nth-child(4) a::after {
+      background: linear-gradient(
+        to bottom left,
+        #00bfff,
+        #ff00ff,
+        #32cd32,
+        yellow
+      );
+      background-size: 200%;
+      animation: go 2s linear infinite;
+    }
+    @keyframes go {
+      to {
+        background-position: 200%;
+      }
+    }
+  </style>
+  <body>
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          <span>- Facebook</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.google.com/search?q=github&sca_esv=253d35dcdd57159c&authuser=1&sxsrf=ANbL-n503a2l2ROzDJv-H1sJMIMAAi-Lag%3A1768722591936&source=hp&ei=n5BsafuvNeyMvr0P3KiC-Ak&iflsig=AFdpzrgAAAAAaWyer6XUeSjAWLoR44UNqnlpkggKFXOX&oq=&gs_lp=Egdnd3Mtd2l6IgAqAggHMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMgcQIxgnGOoCMg0QIxiABBgnGIoFGOoCSJosUABYAHABeACQAQCYAQCgAQCqAQC4AQPIAQCYAgGgAg6oAgqYAw7xBYGvjBCS5sONkgcBMaAHALIHALgHAMIHAzMtMcgHC4AIAA&sclient=gws-wiz">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <span>- Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.google.com/">
+          <i class="fa-brands fa-google" aria-hidden="true"></i>
+          <span>- Google</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          <span>- Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
